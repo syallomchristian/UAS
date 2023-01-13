@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="allTA.css">
+    <title>Product_A</title>
+    <script>
+        function productA() {
+			let text = "Rp 1.500.000,00\nLanjut Pesan?";
+			if (confirm(text) == true) {
+				location.href = "FormPesan.html";
+			} else {
+				text = "You canceled!";
+			}
+		}
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a class="imglogo"><img src="Logo.png" style="width: 100px; height: 70px;" alt="logo"></a>
+            <li><a href="Contact.html" style="margin-right: 40px;"><u>Contact</u></a></li>
+            <li><a href="Product.html"><u>Product</u></a></li>
+            <li><a href="Homepage.html"><u>Home</u></a></li>
+        </ul>
+    </nav>
+    <hr style="height:2px;border-width:0;color:black;background-color:black" width="100%">
+    <section>
+        <div class="boxkembali">
+            <h2 style="text-align: center; margin-top: 12px;"><a href="Product.html">Kembali</a></h2>
+        </div>
+        <div class="imgbox">
+            <img src="cctvA.jpg" alt="cctvA" class="img_cctv" >
+        </div>
+        <b><h1 class="boxnamaproduct">
+            Hikvision DS-2CE56D5T-AVFIR<br>
+            Vari-Focal IR Camera 
+        </h1></b>
+        <div class="boxdescproduct">
+            <b><h2 style="text-align: center; font-size: 45px;"> Feature</h2></b>
+            <h2 style="margin-left: 50px; font-size: 30px;">
+                * lensa wide yang luas<br>
+                * dapat merekam gambar hingga ke berbagai sudut-sudut ruangan<br>
+                * cocok untuk ditempatkan di ruangan yang berukuran besar<br>
+                * dapat memantau ruangan secara menyeluruh di berbagai sudutnya.<br>
+                * cocok untuk pengawasan daerah perumahan
+            </h2>
+        </div>>
+        <h2 class="boxpesan"><a href="#" onclick="productA()"> Pesan </a></h2>
+    </section>
+    <footer>
+        <i>Copyright $copy; 2022 pbw</i>
+    </footer>
+</body>
+</html>

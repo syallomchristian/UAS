@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="allTA.css">
+    <title>FormPesan</title>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+        function beli() {
+			alert ("Pemesanan telah berhasil\nSilahkan tunggu selama max 2x24\nuntuk tim mengonfirmasi pesanan anda");
+		}
+    </script>
+    <style>
+        .boxform{
+            height: 600px;
+            width: 1200px;
+            background-color: white;
+            margin-left: 70px;
+            margin-right: auto;
+            margin-top: 15px;
+            margin-bottom: 40px;
+            border: solid black 2px;
+            border-radius: 30px;
+            
+        }
+
+        .form{
+            margin-left: 25px;
+            margin-right: auto;
+            margin-top: 25px;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <a class="imglogo"><img src="Logo.png" style="width: 100px; height: 70px;" alt="logo"></a>
+            <li><a href="Contact.html" style="margin-right: 40px;"><u>Contact</u></a></li>
+            <li><a href="Product.html"><u>Product</u></a></li>
+            <li><a href="Homepage.html"><u>Home</u></a></li>
+        </ul>
+    </nav>
+    <hr style="height:2px;border-width:0;color:black;background-color:black" width="100%">
+    <div class="boxkembali">
+        <h2 style="text-align: center; margin-top: 12px;"><a href="#" onclick="goBack()">Kembali</a></h2>
+    </div>
+    <section class="boxform">
+        <div style="margin-left: 15px; margin-right: auto;">
+            <form name="fmls" method="post" action="form.php" class="form">
+                <tr>
+                    <td>Nama Pemesan : <br></td>
+                    <td><input type="text" name="fnama" required> <br></td>
+                </tr>
+                <tr>
+                    <td>No telepon:<br></td>
+                    <td><input type="number" name="ftlp" required><br></td>
+                </tr>
+                <tr>
+                    <td>Email:<br></td>
+                    <td><input type="email" name="femail" required><br></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pemasangan<br></td>
+                    <td><input type="date" name="ftanggal" required><br></td>
+                </tr>
+                <tr>
+                    <td>Type Pilihan<br></td>
+                    <td>
+                        <select name="fjenis" required>
+                            <option>Pilih</option>
+                            <option value="JenisA">Type A (Khusus perumahan)</option>
+                            <option value="JenisB">Type B (Khusus perusahaan kecil)</option>
+                            <option value="JenisC">Type C (Khusus Perkantoran)</option>
+                            <br></select>
+                    <br></td>
+                </tr>
+                <tr>
+                    <td>Alamat Pemasangan<br></td>
+                    <td><textarea name="falamat" cols="40" rows="3"></textarea><br></td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="#" onclick="beli()"><input type="submit" name="fsubmit" value="Kirim"></a>
+                    </td>
+                </tr>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <i>Copyright $copy; 2022 pbw</i>
+    </footer>
+</body>
+</html>
